@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- cssファイルの読み取り -->
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>プログラミング　最終課題 クイズ</title>
+</head>
+
+<body onload="time_func()">
+    <header>
+        <h1 id="title">クイズ</h1>
+    </header>
+
+    <p id="time_count">経過時間:</p>
+
+    <div>
+        <div id = "question">
+            <span id="section_1">問題</span>
+            <p id="text_q"></p>
+        </div>
+
+        <div id = "choice">
+            <span id="section_2">選択肢</span>
+            <p id="text_s"></p>
+        </div>
+
+        <div id="anser">
+            <span id="section_3">答え</span>
+            <p id="text_a"></p>
+        </div>
+
+        <div id="score"></div>
+    </div>
+
+    <div id="home">
+        <p><a href="index.html">homeに戻る</a></p>
+    </div>
+
+    <!-- 外部のJavaScriptライブラリを読み込む -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- クイズJavaScript -->
+    <script src="./js/quiz.js"></script>
+</body>
+</html>

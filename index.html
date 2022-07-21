@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- cssファイルの読み取り -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>プログラミング　最終課題</title>
+</head>
+<body>
+    <header>
+        <h1>クイズの部屋</h1>
+    </header>
+
+    <div>
+        <h2>漢字クイズ</h2>
+        <div>
+            <h3>ルール説明</h3>
+            <ul>
+                <li>問題の形式は全て三択クイズです</li>
+                <li>問題は全部で5問あります</li>
+                <li>漢字の読みを答えてください</li>
+                <li>難易度はそれぞれ、漢検5級、準2級、準1級程度となっています</li>
+            </ul>
+        </div> 
+        <div class="button">
+            <a type="button" onclick="location.href='quiz.html?level=' + 1"> 初級 </button>
+            <a type="button" onclick="location.href='quiz.html?level=' + 2"> 中級 </button>
+            <a type="button" onclick="location.href='quiz.html?level=' + 3"> 上級 </button>
+        </div>
+    </div>
+
+    <!-- 外部のJavaScriptを読み込む -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

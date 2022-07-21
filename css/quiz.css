@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* Webページのタイトル */
+#title {
+    position: relative;
+    padding: 5px 15px;
+    border-bottom: 3px solid #000;
+    margin: 0 auto;
+}
+
+#title:before {
+    position: absolute;
+    left: 30px;
+    bottom: -38px;
+    content: '';
+    border-width: 18px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+
+#title:after {
+    position: absolute;
+    left: 30px;
+    bottom: -34px;
+    content: '';
+    border-width: 18px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+
+/* 経過時間 */
+#time_count{
+    text-align: right;
+}
+
+
+/* 問題 */
+#question {
+    position: relative;
+    margin: 2em 2em 0 2em;
+    padding: 0.5em 1em 0.5em 0em;
+    border: solid 3px #0000a0;
+    /* border-radius: 8px; */
+    background-color: rgb(224, 252, 255);
+}
+#question #section_1{
+    position: relative;
+    display: inline-block;
+    top: -24px;
+    left: 45%;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 30px;
+    background: #FFF;
+    color: #be0000;
+    font-weight: bold;
+}
+
+#text_q{
+    position: relative;
+    text-align: center;
+    top: -0.5em;
+    font-size: 25px;
+}
+
+
+/* 選択肢 */
+#choice {
+    position: relative;
+    margin: 0 2em;
+    padding: 0em 1.5em 0em 0em;
+    border: solid 3px rgb(114, 0, 172);
+    text-align: center;
+}
+
+#choice #section_2{
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1em;
+    background: rgb(114, 0, 172);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#text_s{
+    font-size: 20px;
+}
+
+
+/* 答え */
+#anser {
+    position: relative;
+    top: 1.5em;
+    margin: 0 2em;
+    padding: 0;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+#anser #section_3{
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#text_a{
+    position: relative;
+    text-align: center;
+    top: -0.5em;
+    font-size: 1.5em;
+}
+
+
+/* 成績発表 */
+table {
+    margin: 50px auto 0;       
+    width: 800px;              
+    text-align: center;        
+    border-collapse: collapse; 
+    border: 3px solid black;   
+}
+  
+td,th {
+    border: 1px solid black;   
+}
+
+table caption{
+    font-size: large;
+    font-weight: bold;
+}
